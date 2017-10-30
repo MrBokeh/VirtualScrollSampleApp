@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list [virtualScroll]="images" no-lines no-paddings>
+    <ion-item *virtualItem="let img">
+      <ion-img [src]="img"></ion-img>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
